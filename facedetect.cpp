@@ -125,14 +125,14 @@ int main(int argc, const char** argv)
 				detectAndDraw(frame1, cascade, nestedCascade, scale, tryflip, point);
 				Mat imgtem;
 				Rect rc(cvPoint(cvRound(point.x*scale), cvRound(point.y*scale)),
-					cvPoint(cvRound((point.x + point.width - 1)*scale), cvRound((point.y + point.height - 1)*scale)));  //ÈËÁ³×ø±ê
+					cvPoint(cvRound((point.x + point.width - 1)*scale), cvRound((point.y + point.height - 1)*scale)));  //äººè„¸åæ ‡
 				frame1(rc).copyTo(imgtem);
 				Mat sa;
 				resize(imgtem, sa, Size(1000, 1000));
-				//´´½¨ÎÄ¼ş¼Ğ
+				//åˆ›å»ºæ–‡ä»¶å¤¹
 				cout << time_passing << endl;
 				sprintf_s(d, "E:\\Projects\\Project1\\%d", a);
-				//Í¼Æ¬±£´æ
+				//å›¾ç‰‡ä¿å­˜
 				sprintf_s(s, "%d.png", i);
 				cout << s << endl;
 				string str1(&d[0], &d[strlen(d)]);
@@ -149,14 +149,14 @@ int main(int argc, const char** argv)
 				{
 
 
-					cout << time_passing << "ÎÄ¼ş¼ĞÂ·¾¶" << d << endl;
+					cout << time_passing << "æ–‡ä»¶å¤¹è·¯å¾„" << d << endl;
 					CreateDirectory(d, NULL);
 					break;
 
 				}
 				else
 				{
-					cout << "Ê£Óà " <<25-time_passing<<"Ãë´´½¨ĞÂÎÄ¼ş¼Ğ" << endl;
+					cout << "å‰©ä½™ " <<25-time_passing<<"ç§’åˆ›å»ºæ–°æ–‡ä»¶å¤¹" << endl;
 					//time_passing += time_passing;
 				}
 				
