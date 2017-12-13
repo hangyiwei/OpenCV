@@ -45,11 +45,11 @@ int main()
 		{
 
 			cout << (int)(*(m.data + m.step[0] * row + m.step[1] * col)) << " ==>";
-			// 获取第[row,col]个像素点的地址并用*符号解析
+			// 鑾峰彇绗琜row,col]涓儚绱犵偣鐨勫湴鍧�骞剁敤*绗﹀彿瑙ｆ瀽
 			*(m.data + m.step[0] * row + m.step[1] * col) = 255;
 			cout << (int)(*(m.data + m.step[0] * row + m.step[1] * col)) << endl;
 
-			cout <<"每一维的大小" << "\t" <<  m.step[0] << "\t" << m.step[1] << endl;
+			cout <<"姣忎竴缁寸殑澶у皬" << "\t" <<  m.step[0] << "\t" << m.step[1] << endl;
 		}
 	}
 	imshow("canvas", m);
