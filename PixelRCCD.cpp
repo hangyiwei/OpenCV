@@ -9,7 +9,7 @@
 using namespace std;
 using namespace cv;
 
-
+//遍历行列，生成像素值
 
 #define NUM 100
 
