@@ -10,7 +10,7 @@
 using namespace std;
 using namespace cv;
 
-
+//改变图片分辨率大小保存
 
 #define NUM 100
 
