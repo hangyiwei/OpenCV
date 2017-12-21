@@ -10,7 +10,7 @@
 using namespace std;
 using namespace cv;
 
-
+//截取指定范围的图片
 
 #define NUM 100
 
